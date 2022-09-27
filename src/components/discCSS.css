@@ -1,0 +1,81 @@
+
+.disc {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 68px;
+}
+
+.modules {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.module {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 120%;
+    margin-bottom: 54px;
+}
+
+ul {
+    list-style: none;
+    width: 373px;
+}
+
+li {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 120%;
+    margin-bottom: 10px;
+}
+
+li::before {
+    content: "\2022";
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.moduleTitle {
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 32px;
+}
+
+.moduleTitle::before {
+    position: absolute;
+    content: "";
+    width: 9%;
+    height: 2px;
+    background-color: #FF3535;
+}
+
+.specSub {
+    font-size: 16px;
+}
+
+@media (max-width: 1145px) {
+    .modules {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 990px) {
+    .module {
+        flex-direction: column;
+    }
+}

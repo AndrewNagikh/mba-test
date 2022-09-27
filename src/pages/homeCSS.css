@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    font-family: 'Prompt', sans-serif;
+}
+
+h1 {
+    margin-bottom: 90px;
+}
+
+.rectangles {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.rectangle-red {
+    padding: 20px;
+    margin: 0;
+    height: 293px;
+    background-color: #FF3535;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.rectangle-black {
+    padding: 20px;
+    margin: 0;
+    height: 293px;
+    background-color: black;
+    color: white;
+}
+
+.title-desc {
+    position: relative;
+    padding: 20px;
+}
+
+.rectangleTitle {
+    margin-bottom: 24px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 120%;
+}
+
+.rectangleDesc {
+    margin: 0;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 130%;  
+}
+
+@media (max-width: 1146px) {
+    .rectangles {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 520px) {
+    .rectangleTitle {
+        font-size: 25px;
+    }
+    .rectangleDesc {
+        font-size: 17px;
+    }
+    ul {
+        width: 100%;
+    }
+    li {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 420px) {
+    .rectangleTitle {
+        font-size: 25px;
+    }
+    .rectangleDesc {
+        font-size: 20px;
+    }
+    ul {
+        width: 100%;
+    }
+    li {
+        font-size: 15px;
+    }
+    .wrapper {
+        padding: 20px;
+    }
+}
